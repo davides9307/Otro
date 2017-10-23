@@ -34,17 +34,23 @@ dependencies {
     
 }
 
+jacoco {
+    toolVersion = "0.7.4.201502262128"
+}
+
 
 
 
 
 test {
     jacoco{
+        
     	append = false
     	destinationFile = file("jacoco/jacocoTest.exec")
     
     }
     reports.junitXml.destination = file("jacoco/test-results")
 }
+
 
 
